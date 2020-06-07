@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Registration</title>
+                <!-- M.css link -->
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+                  <link rel="stylesheet" href="css/style.css">
+
+                <!-- google font-->
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+                <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+                <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+<!------------------------------------------------------------------------------------------------------------------->        
+<!------------------------------------------------------------------------------------------------------------------->        
+   
+   
+    <body >
+                <nav class="nav-extended">
+                    <div class="nav-wrapper">
+                      <a href="#" class="brand-logo" style="padding-left: 18px;">Register</a>
+                      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    </div>
+                    <div class="nav-content">
+                      <ul class="tabs tabs-transparent">
+                        <li class="tab"><a class="active" href="#test1">1. About</a></li>
+                        <li class="tab"><a  href="#test2" >2. Contact</a></li>
+                        <li class="tab"><a href="#test3">3. Education</a></li>
+                        <li class="tab"><a href="#test4">4. Preview</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                
+                  <ul class="sidenav" id="mobile-demo">
+                    <li><h2 style="font-size: bold;">&nbsp&nbspWelcome!</h2></li> 
+                  </br>
+                  
+                    <li><h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Get Yourself Registered</h6></li>
+                  
+                  </ul>
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+
+                  <div id="test1" id="printableArea" class="container col s12">
+                   
+                    <section class="p" id="printableArea">
+                    </br>
+                      <h2>Basic Info</h2>
+                      <br>
+                      <div class="row " >
+                          <div class="row">
+                            <div class="input-field col s12 l6">
+                              <input placeholder="Enter" id="first_name" type="text" class="validate" required>
+                              <label for="first_name">First Name</label>
+                            </div>
+                            <div class="row">
+
+                            <div class="input-field col s12 l6">
+                              <input id="last_name" type="text" class="validate" required>
+                              <label for="last_name">&nbspLast Name</label>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="input-field col s12 l6">
+                              <input id="date" type="text" class="datepicker" required>
+                              <label for="date">&nbspDate of Birth</label>
+                            </div>
+                          
+                            <div class="input-field col s12 l6">
+                              <div class="center">
+                                <div class="form-input">
+                                  <label for="file-ip-1">Upload Image</label>
+                                  <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                                  <div class="preview">
+                                    <img id="file-ip-1-preview">
+                                  </div>
+                                </div>
+                  
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="input-field col s12 l6">
+                              <input id="email" type="email" class="validate" required>
+                              <label for="email">&nbsp&nbsp&nbspEmail</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12 l6">
+                              <input id="input_text" type="number" data-length="10" required>
+                              <label for="input_text">&nbsp&nbsp&nbspPhone</label>
+                            </div>
+                          </div>
+                          <button class="btn btn-medium"  onclick="toggleModal()";>Next</button>
+                            <p class="right">Page 1/4</p>
+                    </section>
+  </div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------->   
+                  <div id="test2" class="col s12">
+                    <section id="s">
+                      <div class="container" >
+                        <br>
+                        <h2>Address</h2>
+                        <br>
+                        <h3>Mail Address</h3>
+                        <div class="row">
+
+                          <div class="input-field col s12 l12">
+                            <input id="add1" type="text" placeholder="Address Line 1" class="validate" required>
+                          </div>
+                        </div>
+                        <div class="input-field col s12 l12">
+                          <input id="add2" type="text" placeholder="Address Line 2" class="validate" required>
+                        </div>
+                      
+                        
+                      <div class="row ">
+                        <div class="input-field col s12 l4">
+                          <input id="city" type="text" class="city" placeholder="City" required>
+                        </div>
+
+                        <div class="input-field col s12 l4">
+                          <input id="state" type="text" class="city" placeholder="State" required>
+                        </div>
+
+                        <div class="input-field col s12 l4">
+                          <input id="zipcode" type="text" class="city" placeholder="Zip Code" required>
+                        </div>
+                        <br>
+                        <h2>Permanent Address</h2>
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span>Same as mail address</span>
+                          </label>
+                        </p>
+                        
+                        <br>
+                        <h3>Address</h3>
+                        <div class="row">
+                           <div class="input-field col s12 l12">
+                            <input id="add3" type="text" placeholder="Address Line 1" class="validate" required>
+                          </div>
+                        </div>
+                        <div class="input-field col s12 l12">
+                          <input id="add4" type="text" placeholder="Address Line 2" class="validate" required>
+                        </div> 
+                      <div class="row ">
+                        <div class="input-field col s12 l4">
+                          <input id="city1" type="text" class="city" placeholder="City" required>
+                        </div>
+
+                        <div class="input-field col s12 l4">
+                          <input id="state1" type="text" class="city" placeholder="State" required>
+                        </div>
+
+                        <div class="input-field col s12 l4">
+                          <input id="zip1" type="text" class="city" placeholder="Zip Code" required>
+                        </div>
+                      <button class="btn btn-medium"  onclick="toggleback1()";>Back</button>&nbsp&nbsp&nbsp&nbsp<button class="btn btn-medium"  onclick="togglenext2()";>Next</button>
+                        <p class="right">Page 2/4</p>
+                      </div>
+                    </section>
+                  </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------->   
+                  <div id="test3" class="col s12 container"> 
+                    <br>
+                    <h2>Higher Education</h2>
+                    <br>
+                    <div class="input-field col s12">
+                      <select multiple>
+                        <option value="" disabled selected>Select Higher Education</option>
+                        <option value="1">B.Tech (Bachelor of Technology)</option>
+                        <option value="2">M.Tech (Master of Technology)</option>
+                        <option value="3">MCA (Master of Computer Applications) </option>
+                      </select>
+                    </div> 
+                    <br><br><br><br><br><br>
+                  <section class="sec">
+
+                    <div id="myDIV" class="header">
+                      <h2 style="margin:5px">Your Skill</h2>
+                      <input  type="text" id="myInput" placeholder="Write...">
+                      <span onclick="newElement()" class="addBtn"><i class="tiny material-icons">add_circle</i>&nbspAdd</span>
+                    </div>
+                    <div class="aal">
+                    <ul id="myUL">
+                    </ul>
+                    </div>
+                  </section>
+                  <br><br><br><br><br>
+                  <div class="row">
+                    <div class="col s12 l6">
+                  <form action="#">
+                    <div class="file-field input-field">
+                      <div class="btn">
+                        <span>Resume</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Select file...">
+                      </div>
+                    </div>
+                  </div>
+                  </form>
+                  <div class="col s12 l6">
+                  <form action="#">
+
+                    <div class="file-field input-field">
+                      <div class="btn">
+                        <span>Education Docs</span>
+                        <input type="file" multiple>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                      </div>
+                    </div>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*You can add multiple files.</p>
+                  </form>
+                  </div>
+                        </div>
+                        <br><br><br><br>
+                        <button class="btn btn-medium"  onclick="toggleback2()";>Back</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btn btn-medium"  onclick="togglenext3()";>Next</button>
+                        <p class="right">Page 3/4</p>
+                        <br><br><br><br>
+                        </div>
+  
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
+      <div id="test4" class="container col s12">
+        <br><br><br>
+        <input class="btn btn-small" type="button " onclick="printDiv('printableArea')" value="print a preview!" /><br>
+        <p>*reload page after preview</p>
+        <br>
+        <h1>Feedback !</h1>
+        <div class="feedback">
+          <br>
+          <h3>&nbspRate your Experience</h3>
+          <p>
+            <label>
+              <input name="group1" type="radio" />
+              <span>Very Unsatisfied</span>
+            </label>
+            
+              </p>
+              <p>
+                <label>
+              <input name="group1" type="radio" />
+              <span>Unsatisfied</span>
+            </label>
+          </p>
+          <label>
+            <input name="group1" type="radio" />
+            <span>Neutral</span>
+          </label>
+        </p>
+        <label>
+          <input name="group1" type="radio" />
+          <span>Satisfied</span>
+        </label>
+      </p>
+      <label>
+        <input name="group1" type="radio" />
+        <span>Very Satisfied</span>
+      </label>
+    </p>
+          </p>
+        </div>
+
+
+
+
+        <br><br><br><br>
+        <button class="btn btn-medium"  onclick="toggleback3()";>Back</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btn btn-medium"  onclick="submit()";>Submit</button>
+        <p class="right">Page 4/4</p>
+        <br><br><br><br>
+      </div>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
+
+                    
+                            <!-- Modal Structure -->
+                    <section class="infomodal">
+                      <div id="modal3" class="modal">
+                        <div class="modal-content">
+                          <h3>Alert!</h3>
+                          <p>Ensure, you fill all the feild.</p>
+                          <p>Congurates, you may proceed to next step.</p>
+                          <div class="w3-light-grey">
+                            <div class="w3-container " style="width:25%">25%</div>
+                          </div> 
+                        </div>
+                        <div class="modal-footer">
+                          <a href="#" onclick="next1()" class="modal-close waves-effect waves-green btn-flat">OK</a>
+                        </div>
+                      </div>
+                    </section>
+<!------------------------------------------------------------------------------------------------------------------->        
+
+                  <section class="infomodall">
+                    <div id="modal2" class="modal">
+                      <div class="modal-content">
+                        <h3>Alert!</h3>
+                        <p>Ensure, you fill all the feild.</p>
+                        <p>Congurates, you may proceed to next step.</p>
+                        <div class="w3-light-grey">
+                          <div class="w3-container " style="width:50%">50%</div>
+                        </div> 
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#" onclick="next2()" class="modal-close waves-effect waves-green btn-flat">OK</a>
+                      </div>
+                    </div>
+                  </section>
+<!------------------------------------------------------------------------------------------------------------------->        
+
+              <section class="infomodalll">
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <h3>Alert!</h3>
+                    <p>Back to previous section.</p>
+                    <div class="w3-light-grey">
+                      <div class="w3-container " style="width:25%">25%</div>
+                    </div> 
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" onclick="back1()" class="modal-close waves-effect waves-green btn-flat">OK</a>
+                  </div>
+                </div>
+              </section>
+<!------------------------------------------------------------------------------------------------------------------->        
+
+            <div id="skill" class="modal">
+              <div class="modal-content">
+                <h3>Alert!</h3>
+                <p>Oops, you not mention your skill.</p>
+              
+              </div>
+              <div class="modal-footer">
+                <a href="#"  class="modal-close waves-effect waves-green btn-flat">OK</a>
+              </div>
+            </div>
+<!------------------------------------------------------------------------------------------------------------------->        
+
+          <div id="back2" class="modal">
+            <div class="modal-content">
+              <h3>Alert!</h3>
+              <p>Back to previous section.</p>
+              <div class="w3-light-grey">
+                <div class="w3-container " style="width:50%">50%</div>
+              </div> 
+            </div>
+            <div class="modal-footer">
+              <a href="#" onclick="back2()" class="modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+          </div>
+<!------------------------------------------------------------------------------------------------------------------->        
+
+          <div id="next3" class="modal">
+            <div class="modal-content">
+              <h3>Alert!</h3>
+              <p>Ensure, you fill all the feild.</p>
+              <p>Congurates, you may proceed to next step.</p>
+              <div class="w3-light-grey">
+                <div class="w3-container " style="width:75%">75%</div>
+              </div> 
+            </div>
+            <div class="modal-footer">
+              <a href="#" onclick="next3()" class="modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+          </div>
+
+
+            <div id="back3" class="modal">
+              <div class="modal-content">
+                <h3>Alert!</h3>
+                <p>Back to previous section.</p>
+                <div class="w3-light-grey">
+                  <div class="w3-container " style="width:75%">75%</div>
+                </div> 
+              </div>
+              <div class="modal-footer">
+                <a href="#" onclick="back3()" class="modal-close waves-effect waves-green btn-flat">OK</a>
+              </div>
+            </div>
+
+            <div id="submit" class="modal">
+              <div class="modal-content">
+                <h4><Strong>Congratulation!</Strong> ,you have completed your registration successfully.</h4>
+                <br><br>
+                <div class="w3-light-grey">
+                  <div class="w3-container " style="width:100%">100%</div>
+                </div> 
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="modal-close waves-effect waves-green btn-flat">OK</a>
+              </div>
+            </div>
+        
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
+
+    <!--Jquery-->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+      <!-- M.js link -->
+            
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+      <script src="js/loaders.js"></script>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
+<script>
+  function printDiv(divName) {
+  var printContents = document.getElementById(divName).innerHTML;
+  var originalContents = document.body.innerHTML;
+
+  document.body.innerHTML = printContents;
+
+  window.print();
+
+  document.body.innerHTML = originalContents;
+}
+</script>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
+     
+    </body>
+    
+    </html>
